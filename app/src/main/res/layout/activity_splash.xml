@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    tools:context=".SplashActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/duck" />
+
+    <TextView
+        android:id="@+id/tv_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar"
+        android:gravity="center|top"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12dp"
+        android:textStyle="bold|italic"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="0"
+        android:indeterminate="false"
+        android:indeterminateTint="@color/colorPrimary"
+        android:indeterminateTintMode="multiply"
+        android:progress="0"
+        android:secondaryProgress="0"
+        android:visibility="gone" />
+
+</RelativeLayout>
